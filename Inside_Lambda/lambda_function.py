@@ -1,7 +1,6 @@
-# This function contains Python script for the bot that runs on AWS Lambda
+# This file contains a Python script for the bot that runs on AWS Lambda
 from requests import Request, Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
-import time
 import json
 import praw 
 
@@ -56,13 +55,10 @@ def bot_search(r):
 def bot_reply(r):
     max_score_post = bot_search(r)
     # Checking if the top score post exists
+    # If it's None, no popular daily posts talked about Bitcoin prices today.
     if (max_score_post != None):
         max_score_post.reply("Bitcoin price on the day this thread was made is $" + str(get_price()) +
         ". This was posted as a reference point to any future thread readers. Upvote if useful!")
-        print("The bot replied to a post")
-    # Otherwise return this message
-    else:
-        print("No popular daily posts talked about Bitcoin prices today.")
 
 # Retrieving Bitcoin price from CoinMarketCap RESTful API
 def get_price():
@@ -80,9 +76,9 @@ def get_price():
     try:
         response = session.get(url, params=parameters)
         data = json.loads(response.text)
-        # Navigating to the bitcoin price in JSON
+        # Parsing JSON to get Bitcoin price data
         price = data['data']['1']['quote']['USD']['price']
-        # Rounding to two decimal places
+        # Rounding the price to two decimal places
         price = round(price, 2)
 
         return price
