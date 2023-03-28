@@ -2,6 +2,7 @@
 ## Summary
 As someone who is interested in cryptocurrency, I often go on Reddit in search of analysis and discussion posts related to the price of Bitcoin. With high volatility in Bitcoin prices, it’s difficult to understand some of the older discussion and analysis posts as Bitcoin price back then is a big piece of context that is often missing. Instead of Googling “price of Bitcoin on 21st of August 2019”, for example, it would be much more convenient to have the price included somewhere in the thread, so the reader doesn’t have to leave the app to get that information. For this reason, I made a bot that looks for the most upvoted daily post on r/Bitcoin that talks about Bitcoin price action and replies to it with a price of Bitcoin for the day. This allows any reader to have more context when going through popular Bitcoin price threads at any time in the future. Here's how the reply looks:![Bot_Reply](https://user-images.githubusercontent.com/121320863/209593180-15b70a80-d9ab-4598-838e-9bf34a78684f.PNG)
 Update (1/10/2023): The bot received it's first 100 upvotes in less than 3 weeks since launch. Thanks everyone who checked out this project.
+Update (3/27/2023): After a 3 month long test run and over 800 upvotes from the users, I'm shutting down the bot to work on other projects using AWS resources. Thank you to all who gave feedback on bot's features and areas for improvement. 
 
 ## Implementation
 ### Using APIs
