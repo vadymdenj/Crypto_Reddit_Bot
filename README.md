@@ -4,7 +4,7 @@ As someone who is interested in cryptocurrency, I often go on Reddit in search o
 
 Update (1/10/2023): The bot received it's first 100 upvotes in less than 3 weeks since launch. Thanks everyone who checked out this project.
 
-Update (3/27/2023): After a 3 month long test run and over 800 upvotes from the users, I'm shutting down the bot to work on other projects using AWS resources. Thank you to all who gave feedback on bot's features and areas for improvement. 
+Update (3/27/2023): After a 3 month long test run and over 800 upvotes from the users, I'm shutting down the bot to work on other projects using AWS resources. Thank you to all who gave feedback on bot's features and areas for improvement. I will improve upon the current code and hopefully release a newer version of the bot sometime in the future. 
 
 ## Implementation
 ### Using APIs
